@@ -19,7 +19,7 @@
 >>>#info(table_name:str) return table info,cols,data types
 >>> db.add_to_table('Students',data1) #parametrs: <table_name:str>,<data:dict>
 'Executing:'
-'INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')'
+"INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')"
 >>> db.drop_table('Studets') #drop_table(table_name:str)
 ```
 
