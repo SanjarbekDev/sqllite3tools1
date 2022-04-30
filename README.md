@@ -13,13 +13,13 @@
 >>> db.create_table('Students',id='INTEGER PRIMARY KEY AUTOINCREMENT',name='varchar(255)',email="varchar(255)")
 >>>#create_table(table_name:str,**kwargs) 
 >>> db.info('Students')
-|| 0, id, INTEGER, 0, None, 1 ||
-|| 1, name, varchar(255), 0, None, 0 ||
-|| 2, email, varchar(255), 0, None, 0 ||
+'|| 0, id, INTEGER, 0, None, 1 ||'
+'|| 1, name, varchar(255), 0, None, 0 ||'
+'|| 2, email, varchar(255), 0, None, 0 ||'
 >>>#info(table_name:str) return table info,cols,data types
 >>> db.add_to_table('Students',data1) #parametrs: <table_name:str>,<data:dict>
-Executing:
-INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')
+'Executing:'
+'INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')'
 >>> db.drop_table('Studets') #drop_table(table_name:str)
 ```
 
