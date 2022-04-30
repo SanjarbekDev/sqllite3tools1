@@ -13,22 +13,18 @@
 >>> db.create_table('Students',id='INTEGER PRIMARY KEY AUTOINCREMENT',name='varchar(255)',email="varchar(255)")
 >>>#create_table(table_name:str,**kwargs) 
 >>> db.info('Students')
-'|| 0, id, INTEGER, 0, None, 1 ||'
-'|| 1, name, varchar(255), 0, None, 0 ||'
-'|| 2, email, varchar(255), 0, None, 0 ||'
+|| 0, id, INTEGER, 0, None, 1 ||
+|| 1, name, varchar(255), 0, None, 0 ||
+|| 2, email, varchar(255), 0, None, 0 ||
 >>>#info(table_name:str) return table info,cols,data types
 >>> db.add_to_table('Students',data1) #parametrs: <table_name:str>,<data:dict>
-'Executing:'
-"INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')"
+Executing:
+INSERT INTO Users5('name', 'email') VALUES('John','John@gmail.com')
 >>> db.drop_table('Studets') #drop_table(table_name:str)
+```
 
 
-
-[![Downloads](https://pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)
-[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)
-
-## Installing Requests and Supported Versions
+## Installing sqllite3tools1 and Supported Versions
 
 sqllite3tools1 is available on PyPI:
 
@@ -42,20 +38,13 @@ sqllite3tools1 officially supports Python 3.7+.
 
 ## Cloning the repository
 
-When cloning the Requests repository, you may need to add the `-c
-fetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit (see
-[this issue](https://github.com/psf/requests/issues/2690) for more background):
 
 ```shell
-git clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git
+git clone https://github.com/SanjarbekDev/sqllite3tools1.git
 ```
 
-You can also apply this setting to your global Git config:
 
-```shell
-git config --global fetch.fsck.badTimezone ignore
-```
 
 ---
 
-[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)
+[![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)
